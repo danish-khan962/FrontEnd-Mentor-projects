@@ -65,7 +65,6 @@ Html, body{
 .heading{
     font-weight: 800;
     color: hsl(0, 0%, 7%);
-    font-size: 16px;
 }
 .main-para{
     color:  hsl(0, 0%, 42%);
