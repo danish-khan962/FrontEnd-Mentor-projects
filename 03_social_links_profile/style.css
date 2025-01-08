@@ -1,0 +1,100 @@
+/*Importing font - Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey_700: hsl(0, 0%, 20%);
+    --Grey_800: hsl(0, 0%, 12%);
+    --Grey_900: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+Html, body{
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: var(--Grey_900);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--Grey_800);
+    padding: 2rem;
+    border: none;
+    border-radius: 12px;
+    max-width: 400px;
+}
+.block-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.image{
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.image:hover{
+    transform: scale(1.05);
+    transition: all 200ms ease-in-out;
+}
+.name , .location{
+    text-transform: capitalize;
+}
+.location, .btn, .desc{
+    font-size: 14px
+}
+.name{
+    font-weight: 700;
+}
+.location{
+    color: var(--Green);
+    font-weight: 600;
+}
+.desc{
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.block-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.btn{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: var(--Grey_700);
+    color: var(--White);
+    font-weight: 600;
+    border-radius: 8px;
+}
+.btn:hover{
+    background: var(--Green);
+    color: var(--Grey_800);
+    transition: all 200ms ease-in-out;
+}
