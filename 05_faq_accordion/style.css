@@ -1,0 +1,104 @@
+/*Importing Font - WorkSans*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_pink: hsl(275, 100%, 97%);
+    --Grayish_purple: hsl(292, 16%, 49%);
+    --Dark_purple: hsl(292, 42%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+Html, body{
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: var(--Light_pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: var(--White); 
+    padding: 2rem;
+    max-width: 520px;
+    width: 100%;
+    gap: 1rem;
+    border-radius: 14px;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.block-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.para{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.question{
+    font-size: 16px;
+    font-weight: 600;
+}
+.question:hover{
+    cursor: pointer;
+    color: #AD28EB;
+    transition: all 200ms ease-in-out;
+}
+.answer-1, .answer-2, .answer-3, .answer-4{
+    font-size: 16px;
+}
+hr{
+    opacity: 0.2;
+}
+.minus-1, .minus-2, .minus-3, .minus-4{
+    display: none;
+}
+.pattern-mobile{
+    display: none;
+}
+.pattern-desktop{
+    width: 125%;
+    position: absolute;
+    top: 0;
+}
+@media screen and (max-width:700px){
+    .pattern-desktop{
+        display: none;
+    }
+    .pattern-mobile{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+    }
+
+}
+
+
