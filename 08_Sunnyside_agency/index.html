@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--Header-->
+        <div class="container">
+            <div class="nav">
+                <picture>
+                    <img src="./images/logo.svg" alt="">
+                </picture>
+
+                <div class="nav-links">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#" id="contact">CONTACT</a>
+                </div>
+                <img src="./images/icon-hamburger.svg" alt="" class="hamburger">
+                <div class="dropdown">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Project</a>
+                    <a href="#" id="contact-2">CONTACT</a>
+                </div>
+            </div>
+            <div class="title">we are creative</div>
+            <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+
+        </div>
+
+        <!--area-1-->
+        <div class="area-1">
+            <div class="content">
+                <div class="base">
+                    <h1 class="head">Transform your brand</h1>
+                <p class="para">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="learn">learn more</a>
+                </div>
+            </div>
+            <picture class="area-image">
+                <img src="./images/desktop/image-transform.jpg" alt="">
+            </picture>
+        </div>
+
+        <!--area-2-->
+        <div class="area-2">
+            <picture class="area-image">
+                <img src="./images/desktop/image-stand-out.jpg" alt="">
+            </picture>
+
+            <div class="content">
+                <div class="base">
+                    <h1 class="head">Stand out to the right audience</h1>
+                <p class="para">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+                <a href="#" class="learn">learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <!--area-3-->
+        <div class="area-3">
+            <div class="box-1">
+                <div class="text">
+                    <div class="head">Graphic Design</div>
+                    <div class="para">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</div>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="text">
+                    <div class="head">Photography</div>
+                    <div class="para">Increase your credibility by getting the most stunning, high quality photos that improve your business image.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Testimonial-->
+        <div class="testimonial">
+            <h2>client testimonials</h2>
+            <div class="card-area">
+                <div class="card">
+                    <img src="./images/image-emily.jpg" alt="" class="profile">
+                    <p class="para">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <p class="name">Emily r.</p>
+                    <p class="designation">marketing director</p>
+                </div>
+
+                <div class="card">
+                    <img src="./images/image-thomas.jpg" alt="" class="profile">
+                    <p class="para">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+                    <p class="name">thomas s.</p>
+                    <p class="designation">chief operating officer</p>
+                </div>
+
+                <div class="card">
+                    <img src="./images/image-jennie.jpg" alt="" class="profile">
+                    <p class="para">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <p class="name">jeenie f.</p>
+                    <p class="designation">business owner</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--image footer-->
+        <div class="img-footer">
+            <picture><img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="desktop-footer"></picture>
+            <!-- <picture><img src="./images/mobile/image-gallery-milkbottles.jpg" alt="" class="mobile-footer"></picture> -->
+
+            <picture><img src="./images/desktop/image-gallery-orange.jpg" alt="" class="desktop-footer"></picture>
+            <!-- <picture><img src="./images/mobile/image-gallery-orange.jpg" alt="" class="mobile-footer"></picture> -->
+
+            <picture><img src="./images/desktop/image-gallery-cone.jpg" alt="" class="desktop-footer"></picture>
+            <!-- <picture><img src="./images/mobile/image-gallery-cone.jpg" alt="" class="mobile-footer"></picture> -->
+
+
+            <picture><img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="desktop-footer"></picture>
+            <!-- <picture><img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="" class="mobile-footer"></picture> -->
+
+
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="logo">
+                sunnyside
+            </div>
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Project</a>
+            </div>
+            <div class="socials">
+                <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+                <a href="#"><img src="./images/icon-instagram.svg" alt=""></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener("click", ()=>{
+            let dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('show');
+        })
+    </script>
+</body>
+</html>

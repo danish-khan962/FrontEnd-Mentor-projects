@@ -1,0 +1,421 @@
+/*Barlow*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Fraunces*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Soft_red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark_desaturated_cyan: hsl(167, 40%, 24%);
+    --Dark_blue: hsl(198, 62%, 26%);
+    --Dark_moderate_cyan : hsl(168, 34%, 41%);
+    --Very_dark_desaturated_blue: hsl(212, 27%, 19%);
+    --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+    --Dark_grayish_blue: hsl(232, 10%, 55%);
+    --Grayish_blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+Html, body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background: url(./images/desktop/image-header.jpg);
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.nav picture img{
+    width: 170px;
+    height: auto;
+}
+.nav .nav-links{
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.nav .nav-links a{
+    color: var(--White);
+    font-family: 'Barlow', sans-serif;
+}
+#contact{
+    color: #000;
+    background-color: var(--White);
+    padding: 1rem 1.5rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 40px;
+}
+.title{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: var(--White);
+    font-weight: 900;
+}
+.hamburger{
+    display: none;
+}
+.arrow{
+    text-align: center;
+}
+.area-1, .area-2, .area-3{
+    display: flex;
+}
+.content, .area-image{
+    width: 50%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.base{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+@media screen and (max-width: 980px){
+    .content{
+        padding: 0.5rem;
+    }
+    .base{
+        width: 100%;
+    }
+}
+.head{
+    font-size:43px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+.para{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark_grayish_blue);
+    line-height: 1.7rem;
+}
+.learn{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0.6rem;
+    text-shadow: 1px 1px 16px yellow;
+}
+.area-image img{
+    width: 100%;
+}
+.box-1, .box-2{
+    width: 50%;
+}
+.box-1{
+    background: url(./images/desktop/image-graphic-design.jpg);
+    height: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-2{
+    background: url(./images/desktop/image-photography.jpg);
+    height: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    margin-top: 22rem;
+    text-align: center;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.box-1 .head{
+    color: var(--Dark_desaturated_cyan);
+    font-size: 38px;
+}
+.box-1 .para{
+    color: var(--Dark_moderate_cyan);
+    font-weight: 600;
+}
+.box-2 .head{
+    color: var(--Dark_blue);
+    font-size: 38px;
+}
+.box-2 .para{
+    color: var(--Dark_blue);
+    font-weight: 600;
+}
+
+/*TESTIMONIAL*/
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8.5rem;
+    gap: 1rem;
+}
+.testimonial h2{
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--Grayish_blue);
+}
+.card-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin: 0.5rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:  2rem;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.card img{
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+}
+.card .para{
+    margin-top: 3.5rem;
+    color: var(--Very_dark_grayish_blue);
+}
+.name{
+    font-family: 'Fraunces', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 3.8rem;
+}
+.designation{
+    font-family: 'Barlow', sans-serif;
+    color: var(--Grayish_blue);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.8rem;
+}
+
+.img-footer{
+    display: flex;
+    flex-direction: row;
+}
+.img-footer picture{
+    width: 25%;
+}
+.img-footer picture img{
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsla(168, 34%, 55%, 0.6);
+    padding: 4.5rem 2rem;
+}
+ .footer .logo{
+    font-family: 'Barslow', sans-serif;
+    font-weight: 900;
+    color: var(--Dark_moderate_cyan);
+    font-size: 40px;
+ }
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+}
+.links a{
+    margin-top: 2.5rem;
+    font-size: 18px;
+    font-family: 'Barslow', sans-serif;
+    color: var(--Dark_moderate_cyan);
+    font-weight: 600;
+}
+.socials{
+    margin-top: 5.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+
+/*Responsiveness*/
+@media screen and (max-width: 750px){
+    .nav-links a{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .container{
+        background: url(./images/mobile/image-header.jpg);
+        height: 100vh;
+        width: 100vw;
+        object-fit:cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+    }
+    .area-1{
+        flex-direction: column-reverse;
+    }
+    .area-2{
+        flex-direction: column;
+    }
+    .content, .area-image{
+        width: 100%;
+    }
+    .base{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+    .card-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .area-3{
+        flex-direction: column;
+    }
+    .box-1, .box-2, .text{
+        width: 100%;
+    }
+    .box-1{
+        background: url(./images/mobile/image-graphic-design.jpg);
+    }
+    .box-2{
+        background: url(./images/mobile/image-photography.jpg);
+    }
+}
+@media screen and (max-width: 600px){
+    .testimonial{
+        padding: 1rem;
+    }
+    .testimonial h2{
+        font-size: 20px;
+    }
+    .card-area{
+        gap: 2rem;
+    }
+    .card{
+        padding: 0.5rem;
+    }
+    .card .para{
+        margin-top: 1.5rem;
+    }
+    .card .name{
+        margin-top: 2.2rem;
+    }
+    .img-footer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .img-footer picture{
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 16px;
+    font-family: 'Barslow',sans-serif;
+    width: 250px;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--White);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+    top: 15%;
+}
+.dropdown a{
+    font-family: 'Barlow', sans-serif;
+    color: var(--Very_dark_grayish_blue);
+    font-weight: 600;
+    padding: 0.5rem;
+}
+.dropdown a:hover{
+    background-color: #000;
+    border-radius: 12px;
+    color: var(--White);
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+#contact-2{
+    background-color: var(--Yellow);
+    color: #000;
+    padding: 1rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+}
+.dropdown{
+    display: none;
+}
+.dropdown.show{
+    display: flex;
+}
