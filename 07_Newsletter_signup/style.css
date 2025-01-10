@@ -206,7 +206,21 @@ form .btn:hover{
         margin-top: 7rem;
     }
 }
-/*Temporary styling*/
-.successCard{
+.browse{
+    padding: 0.9rem;
+    border: none;
+    background-color: var(--Grey);
+    color: var(--White);
+    border-radius: 8px;
+}
+.browse:hover{
+    background: linear-gradient(#FF6A3A,#FF527B);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    transform: scale(1.01);
+    color: var(--White);
+    box-shadow: 1px 4px 22px var(--Tomato);
+}
+.successCard, .browse{
     display: none;
 }
