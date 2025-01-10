@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="leftAndBottom">
+                <div class="up">
+                    <h1 class="heading">Stay updated!</h1>
+                    <p class="p1">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="ul">
+                        <li class="li">
+                            <img src="./images/icon-list.svg" alt="">
+                            <p class="list-para">Product discovery and building what matters</p>
+                        </li>
+                        <li class="li">
+                            <img src="./images/icon-list.svg" alt="">
+                            <p class="list-para">Measuring to ensure updates are a success</p>
+                        </li>
+                        <li class="li">
+                            <img src="./images/icon-list.svg" alt="">
+                            <p class="list-para">And much more!</p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="/myaction.php" name="myForm" class="down">
+                    <div class="flabel" id="email">
+                        <p class="label">Email Address</p>
+                        <p class="error" style="opacity: 0;">Valid email required</p>
+                    </div>
+                
+                    <input type="email" name="email" placeholder="email@company.com" class="fmail">
+                
+                    <button class="btn">Subscribe to monthly newsletter</button>
+                </form>
+                
+                
+            </div>
+            <div class="rightAndTop">
+                <img src="./images/illustration-sign-up-desktop.svg" alt="" class="desktop-image">
+                <img src="./images/illustration-sign-up-mobile.svg" alt="" class="mobile-image">
+            </div>
+        </div>
+
+
+        <!--Success card-->
+        <div class="successCard">
+            <div>
+                <img src="./images/icon-success.svg" alt="">
+            </div>
+            <p class="title">Thanks for subscribing!</p>
+            <p class="confirmation">A confirmation email has been sent to <span class="em"> </span>. Please open it and click the button inside to confirm your subscription.</p>
+            <button class="dismiss">Dismiss message</button>
+        </div>
+    </div>
+
+
+    <!--Linking JS file-->
+    <script src="script.js"></script>
+</body>
+</html>
