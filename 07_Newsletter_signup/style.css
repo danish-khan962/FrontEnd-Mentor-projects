@@ -24,7 +24,7 @@ Html, body{
 .wrapper{
     height: 100dvh;
     width: 100dvw;
-    background-color: var(--Dark_Slate_Grey);
+    background-color: var(--Charcoal_Grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,7 +209,7 @@ form .btn:hover{
 .browse{
     padding: 0.9rem;
     border: none;
-    background-color: var(--Grey);
+    background-color: var(--Dark_Slate_Grey);
     color: var(--White);
     border-radius: 8px;
 }
